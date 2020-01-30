@@ -4,6 +4,7 @@ pipeline {
     stage('test') {
       steps {
         echo 'Hello World'
+<<<<<<< HEAD
 	}
     }
     stage('Upload to AWS') {
@@ -14,5 +15,14 @@ pipeline {
 	}
       }
     }
+=======
+        sh '''
+           echo "multipleline "
+           ls -lah
+        '''
+      }
+    }
+
+>>>>>>> b2a37ece8de5dcb0a6e066155b54a7f3cf5e2e50
   }
 }
